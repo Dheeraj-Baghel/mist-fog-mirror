@@ -7,6 +7,10 @@ fog. Mouse dragging and touch work without a camera.
 
 ## Open it
 
+**[GitHub source](https://github.com/Dheeraj-Baghel/mist-fog-mirror)** is private.
+The dedicated Vercel project is connected to `main`; first publication and live
+checks are in progress. See [deployment status](DEPLOYMENT.md).
+
 The local development address is **http://127.0.0.1:4321**.
 
 To restart, use Node.js 20+ in this folder:
@@ -17,8 +21,8 @@ npm start
 
 There are no runtime npm dependencies or build step. Do not double-click the HTML
 as a file: browser ES modules and webcam permissions need a local web server or
-HTTPS. The server binds to this Mac only by default. This is a local project, not
-a public deployment.
+HTTPS. The development server binds to this Mac only by default; production
+publishes an allowlisted static build, not this local Node server.
 
 1. Open the local address in Chrome on your Mac.
 2. Click **Enable mirror** and allow the browser's camera permission.
@@ -92,5 +96,6 @@ feel/lighting, the user's native permission prompt, and Safari remain user check
 - [Fogged synthetic camera](artifacts/testing/camera-fogged.png)
 - [Clear synthetic camera](artifacts/testing/camera-clear.png)
 
-The static assets can also be served from an HTTPS static host. No hosting
-account, public deployment, paid API, or physical camera capture was performed.
+The user authorized GitHub and Vercel publication. No paid API, hosting upgrade
+or physical camera capture is part of deployment. Camera frames and drawings
+remain on-device on the hosted site too.

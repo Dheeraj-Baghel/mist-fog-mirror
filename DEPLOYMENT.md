@@ -1,14 +1,17 @@
 # Mist - deployment
 
 The user authorized pushing this app to GitHub and setting up Vercel deployment.
-The default source visibility is private; the hosted website will be public.
-Publication and hosted verification are in progress, not yet confirmed.
+**[GitHub repository](https://github.com/Dheeraj-Baghel/mist-fog-mirror)** is now
+private and published. Vercel's GitHub integration is connected to `main`.
+The production website will be public, with this project's Vercel authentication
+protection disabled. First deployment and hosted verification are in progress,
+not yet confirmed.
 
 ## Scope and build
 
 - Publish only this independent app, not the containing Designer workspace.
-- Intended GitHub repository: `Dheeraj-Baghel/mist-fog-mirror`, branch `main`.
-- Intended Vercel project: `mist-fog-mirror-softtech10`, in the existing
+- GitHub repository: `Dheeraj-Baghel/mist-fog-mirror`, branch `main`.
+- Vercel project: `mist-fog-mirror-softtech10`, in the existing
   `softtech10` Hobby scope. Hobby is for personal/non-commercial use and is
   subject to its quotas; no paid upgrade, add-on, or domain purchase is planned.
 - Node.js 24.x; no production dependencies, secrets, database or server functions.
@@ -34,7 +37,7 @@ accuracy, lighting, physical devices and Safari remain user checks.
 
 ## Updates
 
-After the GitHub integration is verified, reviewed pushes to `main` should build
-and deploy automatically. Run unit tests, build and browser checks before pushing.
+The GitHub integration is configured; this push will verify an automatic build
+from `main`. Run unit tests, build and browser checks before future pushes.
 A failed build should leave the previous successful production alias intact.
 Do not push the containing workspace or commit local credential files.
