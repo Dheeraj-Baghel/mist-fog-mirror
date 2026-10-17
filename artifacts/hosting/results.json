@@ -1,0 +1,72 @@
+{
+  "testedAt": "2026-10-17T10:40:11.486Z",
+  "baseURL": "https://mist-fog-mirror-softtech10.vercel.app",
+  "results": [
+    {
+      "name": "desktop landing, privacy, no premature camera or hand-model load",
+      "passed": true,
+      "ms": 536
+    },
+    {
+      "name": "mouse leaves a genuinely transparent wipe, not a painted line",
+      "passed": true,
+      "ms": 1189
+    },
+    {
+      "name": "one toggle clears the entire mirror and re-fogs with no old marks",
+      "passed": true,
+      "ms": 86
+    },
+    {
+      "name": "resize preserves the drawing and canvas dimensions",
+      "passed": true,
+      "ms": 778
+    },
+    {
+      "name": "real camera API, MediaPipe CDN, WASM and hand model initialize",
+      "passed": true,
+      "ms": 8714
+    },
+    {
+      "name": "camera is a true mirrored feed and can be explicitly stopped",
+      "passed": true,
+      "ms": 181
+    },
+    {
+      "name": "no media upload requests and no uncaught browser exceptions",
+      "passed": true,
+      "ms": 3
+    },
+    {
+      "name": "mobile layout and touch wiping work",
+      "passed": true,
+      "ms": 870
+    },
+    {
+      "name": "camera denial is actionable and mouse fallback remains usable",
+      "passed": true,
+      "ms": 246
+    },
+    {
+      "name": "synthetic index gesture wipes at the correct mirrored fingertip",
+      "passed": true,
+      "ms": 240
+    },
+    {
+      "name": "open-hand pause never draws or connects a new stroke across the gap",
+      "passed": true,
+      "ms": 432
+    },
+    {
+      "name": "losing the hand hides the cursor and safely lifts the pen",
+      "passed": true,
+      "ms": 86
+    }
+  ],
+  "errors": [],
+  "boundaries": [
+    "Synthetic webcam, not physical Mac camera.",
+    "Actual MediaPipe module/WASM/model startup tested separately from synthetic gesture integration.",
+    "Real-user hand accuracy and native Safari permission flow require user testing."
+  ]
+}

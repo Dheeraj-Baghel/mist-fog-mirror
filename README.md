@@ -7,19 +7,22 @@ fog. Mouse dragging and touch work without a camera.
 
 ## Open it
 
+**[Open live Mist](https://mist-fog-mirror-softtech10.vercel.app)** in a normal
+browser tab and allow camera access after clicking **Enable mirror**.
 **[GitHub source](https://github.com/Dheeraj-Baghel/mist-fog-mirror)** is private.
-The dedicated Vercel project is connected to `main`; first publication and live
-checks are in progress. See [deployment status](DEPLOYMENT.md).
+Vercel automatically deploys pushes to `main`; the Git-triggered production build
+and live checks passed. See [deployment and safe updates](DEPLOYMENT.md).
 
 The local development address is **http://127.0.0.1:4321**.
 
-To restart, use Node.js 20+ in this folder:
+To restart, use Node.js 24.x in this folder:
 
 ```sh
 npm start
 ```
 
-There are no runtime npm dependencies or build step. Do not double-click the HTML
+There are no runtime npm dependencies; local use needs no build step. Vercel runs
+`npm run build` to copy only the four public assets. Do not double-click the HTML
 as a file: browser ES modules and webcam permissions need a local web server or
 HTTPS. The development server binds to this Mac only by default; production
 publishes an allowlisted static build, not this local Node server.
@@ -95,6 +98,17 @@ feel/lighting, the user's native permission prompt, and Safari remain user check
 - [Mobile preview](artifacts/testing/mobile.png)
 - [Fogged synthetic camera](artifacts/testing/camera-fogged.png)
 - [Clear synthetic camera](artifacts/testing/camera-clear.png)
+
+**Hosted release (2026-10-17):** all 12 Chrome browser checks passed again against
+the anonymous HTTPS production URL, including real MediaPipe startup with a
+synthetic webcam. All 12 HTTP checks passed: public asset bytes match the source,
+camera/security headers are present, and development/credential/test-artifact
+paths return 404. The production dependency audit has zero vulnerabilities.
+See [hosted browser results](artifacts/hosting/results.json),
+[HTTP results](artifacts/hosting/http-checks.json),
+[hosted desktop](artifacts/hosting/desktop.png), and
+[hosted mobile](artifacts/hosting/mobile.png). Physical camera/hand quality and
+Safari still need user testing.
 
 The user authorized GitHub and Vercel publication. No paid API, hosting upgrade
 or physical camera capture is part of deployment. Camera frames and drawings

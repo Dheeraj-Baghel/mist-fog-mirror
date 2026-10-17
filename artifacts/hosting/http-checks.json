@@ -1,0 +1,139 @@
+{
+  "testedAt": "2026-10-17T10:41:08.970Z",
+  "origin": "https://mist-fog-mirror-softtech10.vercel.app",
+  "anonymous": true,
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/styles.css",
+      "status": 200,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/geometry.js",
+      "status": 200,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/.env",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/.env.local",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/.git/config",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/package.json",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/server.js",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/README.md",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/artifacts/testing/camera-clear.png",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    },
+    {
+      "path": "/not-a-real-route",
+      "status": 404,
+      "passed": true,
+      "headers": {
+        "permissions-policy": "camera=(self), microphone=(), geolocation=()",
+        "referrer-policy": "no-referrer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      }
+    }
+  ]
+}
