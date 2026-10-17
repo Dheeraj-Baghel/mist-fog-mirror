@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#141919">
+  <meta name="description" content="A quiet, camera-powered fogged mirror. Draw with a fingertip, clear the condensation, and begin again. Private and processed on your device.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d4038'/%3E%3Ctext x='13' y='47' font-size='49' font-family='Georgia' font-style='italic' fill='%23d6e3a6'%3Em%3C/text%3E%3C/svg%3E">
+  <title>Mist — a foggy mirror</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- A locally processed, horizontally mirrored camera feed sits behind a removable fog layer. -->
+  <main id="mirror" class="mirror" aria-label="Interactive fogged mirror">
+    <video id="camera" autoplay muted playsinline aria-hidden="true"></video>
+    <div class="idle-reflection" aria-hidden="true"></div>
+    <canvas id="fog" aria-hidden="true"></canvas>
+    <canvas id="condensation" aria-hidden="true"></canvas>
+    <div id="finger" class="finger" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="Mist home">mist<span> / </span></a>
+      <span class="eyebrow">a little space to leave a trace</span>
+      <span id="camera-indicator" class="camera-indicator">camera off</span>
+    </header>
+    <section id="welcome" class="welcome" aria-labelledby="title">
+      <span class="chapter">YOUR CAMERA. A LITTLE CONDENSATION.</span>
+      <h1 id="title">Something in<br>the <em>mist.</em></h1>
+      <p>Turn your screen into a fogged mirror.<br>Raise one finger. Leave a little something behind.</p>
+      <button id="start-camera" class="start-camera" type="button">Enable mirror <span aria-hidden="true">↗</span></button>
+      <span class="privacy">Camera stays on your device. No recording. No uploads.</span>
+    </section>
+    <!-- Gesture control: a raised index finger draws; an open hand pauses. Mouse/touch is the fallback. -->
+    <footer class="controls">
+      <div class="instruction"><span class="instruction-label">LEAVE YOUR MARK</span><span id="instruction-text">One finger to draw · open hand to pause</span></div>
+      <button id="fog-toggle" class="fog-toggle" type="button" aria-pressed="true"><span class="fog-symbol" aria-hidden="true">≋</span><span id="fog-label">Defog mirror</span></button>
+      <button id="camera-toggle" class="camera-toggle" type="button" aria-label="Camera settings" title="Turn camera on or off">Camera off</button>
+    </footer>
+    <div class="status-pill" role="status" aria-live="polite"><span id="status-dot" class="status-dot"></span><span id="status-text">You can also draw with your mouse or touch.</span></div>
+    <div id="error" class="error" role="alert" hidden></div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

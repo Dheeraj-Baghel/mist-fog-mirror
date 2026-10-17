@@ -1,0 +1,14 @@
+# Only browser assets plus the small allowlisted build are deployment inputs.
+.git/
+.vercel/
+node_modules/
+dist/
+.env
+.env.*
+artifacts/
+tests/
+README.md
+DEPLOYMENT.md
+server.js
+.DS_Store
+*.log

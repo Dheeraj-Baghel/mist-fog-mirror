@@ -1,0 +1,72 @@
+{
+  "testedAt": "2026-10-16T16:08:09.916Z",
+  "baseURL": "http://127.0.0.1:4321",
+  "results": [
+    {
+      "name": "desktop landing, privacy, no premature camera or hand-model load",
+      "passed": true,
+      "ms": 266
+    },
+    {
+      "name": "mouse leaves a genuinely transparent wipe, not a painted line",
+      "passed": true,
+      "ms": 1354
+    },
+    {
+      "name": "one toggle clears the entire mirror and re-fogs with no old marks",
+      "passed": true,
+      "ms": 77
+    },
+    {
+      "name": "resize preserves the drawing and canvas dimensions",
+      "passed": true,
+      "ms": 778
+    },
+    {
+      "name": "real camera API, MediaPipe CDN, WASM and hand model initialize",
+      "passed": true,
+      "ms": 26872
+    },
+    {
+      "name": "camera is a true mirrored feed and can be explicitly stopped",
+      "passed": true,
+      "ms": 202
+    },
+    {
+      "name": "no media upload requests and no uncaught browser exceptions",
+      "passed": true,
+      "ms": 3
+    },
+    {
+      "name": "mobile layout and touch wiping work",
+      "passed": true,
+      "ms": 855
+    },
+    {
+      "name": "camera denial is actionable and mouse fallback remains usable",
+      "passed": true,
+      "ms": 411
+    },
+    {
+      "name": "synthetic index gesture wipes at the correct mirrored fingertip",
+      "passed": true,
+      "ms": 236
+    },
+    {
+      "name": "open-hand pause never draws or connects a new stroke across the gap",
+      "passed": true,
+      "ms": 583
+    },
+    {
+      "name": "losing the hand hides the cursor and safely lifts the pen",
+      "passed": true,
+      "ms": 83
+    }
+  ],
+  "errors": [],
+  "boundaries": [
+    "Synthetic webcam, not physical Mac camera.",
+    "Actual MediaPipe module/WASM/model startup tested separately from synthetic gesture integration.",
+    "Real-user hand accuracy and native Safari permission flow require user testing."
+  ]
+}
